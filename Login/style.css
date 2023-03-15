@@ -1,0 +1,107 @@
+/*{
+    background: cadetblue;
+   
+}*/
+body{
+    color: black;
+    margin: 0;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-image: url(images/45805864-hd-cars-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-size: 65rem; 
+    font-weight: 700;
+    font-size: larger;
+    
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+.form{
+    border: solid black;
+    padding: 30px;
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    animation: my 8s; 
+    animation-iteration-count:infinite;
+}
+.form:hover{
+    animation-play-state: paused;
+}
+.mail{
+    border: solid white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: auto;
+    line-height: 22px;
+    color: black;
+    display: flex;
+    transition: 0.5s;
+    animation: mymove 4s; 
+    animation-iteration-count: infinite;
+    background: none;
+    font-weight: 700;
+
+}
+.mail:hover , .pass:hover{
+    border-color: gold;
+    
+}
+@keyframes mymove{
+    from {border-color: blue;}
+    to {border-color: deepskyblue;}
+}
+@keyframes move{
+    50%{border-color: palevioletred; }
+}
+@keyframes my{
+    0%{transform: rotateY(360deg);}
+    25%{border-color: orange;}
+}
+.sub{
+    border: solid white;
+    border-radius: 30px;
+    width: 80px;
+    color: black;
+    padding: 10px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    background: none;
+    font-weight: 700;
+}
+.sub:hover{
+    width: 150px;
+    border-color: gold;
+}
+/*::placeholder{
+    color: black;
+    font-weight: 500;
+    font: caption;
+}*/
+.center{
+    display: flex
+}
+.pass{
+    border: solid white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: auto;
+    line-height: 22px;
+    color: black;
+    background: none;
+    display: flex;
+    transition: 0.5s;
+    animation: move 4s;
+    animation-iteration-count: infinite;
+    font-weight:700;
+}
+
