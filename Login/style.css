@@ -1,7 +1,3 @@
-/*{
-    background: cadetblue;
-   
-}*/
 body{
     color: black;
     margin: 0;
@@ -17,91 +13,44 @@ body{
     font-size: larger;
     
 }
-a{
-    text-decoration: none;
-}
-a:hover{
-    color: red;
-}
-.form{
-    border: solid black;
-    padding: 30px;
+.word{
     position: relative;
-    display: block;
-    transition: 0.5s;
-    animation: my 8s; 
-    animation-iteration-count:infinite;
+    padding: 0 100px;
 }
-.form:hover{
-    animation-play-state: paused;
+.text{
+    border-radius: 30px;
+    width: 40%;
+    padding: 10px;
+    background: none;
 }
-.mail{
-    border: solid white;
+.next{
     border-radius: 30px;
     padding: 10px;
-    margin: auto;
-    line-height: 22px;
-    color: black;
-    display: flex;
-    transition: 0.5s;
-    animation: mymove 4s; 
-    animation-iteration-count: infinite;
+    width: 20%;
     background: none;
-    font-weight: 700;
-
 }
-.mail:hover , .pass:hover{
-    border-color: gold;
+.next:hover{
+    background-color: blue;
+}
+.text:hover{
+    background-color: blue;
+}
+@media screen and (max-width: 416px) {
+    .word{
+        padding: 4%;
+        margin: 0;
+    }
+    .text{
+        width: 80%;
+    }
+    .text:hover{
+        background-color: blue;
+    }
+    .next{
+        width: 50%;
+    }
+    .next:hover{
+        background-color: blue;
+    }
     
 }
-@keyframes mymove{
-    from {border-color: blue;}
-    to {border-color: deepskyblue;}
-}
-@keyframes move{
-    50%{border-color: palevioletred; }
-}
-@keyframes my{
-    0%{transform: rotateY(360deg);}
-    25%{border-color: orange;}
-}
-.sub{
-    border: solid white;
-    border-radius: 30px;
-    width: 80px;
-    color: black;
-    padding: 10px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
-    background: none;
-    font-weight: 700;
-}
-.sub:hover{
-    width: 150px;
-    border-color: gold;
-}
-/*::placeholder{
-    color: black;
-    font-weight: 500;
-    font: caption;
-}*/
-.center{
-    display: flex
-}
-.pass{
-    border: solid white;
-    border-radius: 30px;
-    padding: 10px;
-    margin: auto;
-    line-height: 22px;
-    color: black;
-    background: none;
-    display: flex;
-    transition: 0.5s;
-    animation: move 4s;
-    animation-iteration-count: infinite;
-    font-weight:700;
-}
-
