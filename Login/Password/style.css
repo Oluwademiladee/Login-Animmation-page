@@ -1,0 +1,56 @@
+body{
+    color: black;
+    margin: 0;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-image: url(images/45805864-hd-cars-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-size: 65rem; 
+    font-weight: 700;
+    font-size: larger;
+    
+}
+.word{
+    position: relative;
+    padding: 0 100px;
+}
+.text{
+    border-radius: 30px;
+    width: 40%;
+    padding: 10px;
+    background: none;
+}
+.next{
+    border-radius: 30px;
+    padding: 10px;
+    width: 20%;
+    background: none;
+}
+.next:hover{
+    background-color: blue;
+}
+.text:hover{
+    background-color: blue;
+}
+@media screen and (max-width: 416px) {
+    .word{
+        padding: 4%;
+        margin: 0;
+    }
+    .text{
+        width: 80%;
+    }
+    .text:hover{
+        background-color: blue;
+    }
+    .next{
+        width: 50%;
+    }
+    .next:hover{
+        background-color: blue;
+    }
+    
+}
